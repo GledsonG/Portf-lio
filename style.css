@@ -1,0 +1,170 @@
+ @font-face {
+   font-family: "modern_romance";
+   src: url(Poppins-Regular.ttf);
+ }
+
+
+ * {
+    box-sizing: border-box;
+}
+
+body {
+    min-height:100vh;
+    background-color: rgba(1, 1, 8, 0.979);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*controla o alinhamento no eixo horizontal (esquerda/direita/centro)*/
+    align-items: center;  /*→ controla o alinhamento no eixo vertical (topo/baixo/centro)*/
+ }
+
+.container-principal{
+   width: 100%; max-width: 1600px;   /*vw signifioca viewpoint width que é largura da tela.... estou dizendo também que a largura maxima só pode ser até 2000px   */
+   min-height: 1vh;   /*vh significa viewpoint Height que é altura da tela*/
+   display: flex;  
+   margin: 0 auto ;
+   flex-direction: column;
+   justify-content: left;
+}
+
+.rodape{
+width: 100%;
+height: 70px;
+background-color: rgb(63, 63, 63);
+border-radius: 50px;
+border: 1px solid rgb(8, 8, 8);
+box-shadow: 0 0 6px black;
+margin-top: -120px;
+}
+
+.icones-topo{
+display: flex;
+justify-content: center;
+gap: 110px;
+margin-top: 15px;
+
+}
+
+.icones-topo img{
+   width: 40px;
+   filter:
+drop-shadow(2px 3px 4px rgb(148, 220, 238))
+ }
+
+
+.iconinstagram:hover{
+transform: scale(1.15);
+   transition: .6s;
+filter:
+drop-shadow(0 0 8px rgb(208, 255, 1))
+drop-shadow(0 0 6px rgb(165, 12, 253));
+ }
+
+ .iconwpp:hover{
+transform: scale(1.15);
+   transition: .6s;
+filter:
+drop-shadow(0 0 8px rgb(0, 253, 76))
+drop-shadow(0 0 6px rgb(255, 254, 255));
+ }
+
+ .icongithub:hover{
+transform: scale(1.15);
+   transition: .6s;
+filter:
+drop-shadow(0 0 8px rgb(107, 107, 107))
+drop-shadow(0 0 3px rgb(255, 254, 255));
+ }
+
+ .iconlinkedin:hover{
+transform: scale(1.15);
+   transition: .6s;
+filter:
+drop-shadow(0 0 8px rgb(5, 66, 235))
+drop-shadow(0 0 1px rgb(253, 254, 255));
+ }
+
+.foto-perfil img{
+width: 450px ;
+border-radius: 200px;
+}
+
+.informacoes {
+color: rgb(255, 255, 255);
+font-family: "modern_romance";
+text-shadow: 2px 2px black;
+}
+
+.typewriter{
+overflow: hidden;
+white-space: nowrap;
+display: inline-block;
+animation: maquinadedigitar 5s steps(16) forwards;
+animation-iteration-count: infinite;
+animation: 
+    maquinadedigitar 5s steps(15) infinite,
+    piscar 0.7s steps(1) infinite;
+vertical-align: middle;
+color: aqua;
+border-right: 3px solid rgb(0, 255, 255);
+}
+
+@keyframes maquinadedigitar {
+    0% {
+        width: 0;
+    }
+    40% {
+        width: 15ch;    /* termina de escrever */
+    }
+    80% {
+        width: 15ch;    /* fica "pausado", completo, sem mudar */
+    }
+    100% {
+        width: 0;        /* apaga rapidinho, indo pro próximo ciclo */
+    }
+}
+
+@keyframes piscar {
+    0%, 50% {
+        border-color: transparent;
+    }
+    51%, 100% {
+        border-color: rgb(117, 243, 243);
+    }
+}
+
+.linha-principal{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: -60px;
+}
+
+.informacoes h1{
+color: rgb(0, 255, 255);
+font-size: 50px;
+}
+
+.nuvemoji{
+   font-size: 40px;
+}
+
+
+.sobremim{
+width: 100%; max-width: 1600px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+ color: rgb(255, 255, 255);
+font-family: "modern_romance";
+text-shadow: 2px 2px black;
+margin-top: -90px;
+}
+
+.textomim {
+font-size: 15px;
+}
+
+.sobremim h1{
+color: aqua;
+}
